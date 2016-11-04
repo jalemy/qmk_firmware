@@ -31,8 +31,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | LGui | App  |       | Ctrl/Esc | RGui |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       |   =  |        |      |
- *                                 | Backs|Delete|------|       |------|  Enter |Space |
- *                                 | pace |      | End  |       | TAB  |        |      |
+ *                                 | Space| Back |------|       |------|  Delete|Enter |
+ *                                 |      | Space| End  |       | TAB  |        |      |
  *                                 `--------------------'       `----------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LALT(KC_LSFT),  LT(SYMB,KC_GRV),KC_QUOT,KC_LGUI,GUI_T(KC_LANG2),
                                               KC_LGUI,  ALT_T(KC_APP),
                                                               KC_HOME,
-                                               KC_BSPC,KC_DELT,KC_END,
+                                               KC_SPC,  KC_BSPC,KC_END,
         // right hand
              KC_RGHT,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
              KC_RPRN,       KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_BSLS,
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   GUI_T(KC_LANG1),  KC_EQL,KC_LBRC,KC_RBRC,          KC_FN1,
              CTL_T(KC_ESC),        KC_LGUI,
              KC_EQL,
-             KC_TAB, KC_ENT, KC_SPC
+             KC_TAB, KC_DELT, KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
