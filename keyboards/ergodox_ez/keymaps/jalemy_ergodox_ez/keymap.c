@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  {   |           |   }  |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |AltShf|Grv/L1|  '"  |   ?  | Eisu |                                       | Kana |   =  |   [  |   ]  | ~L1  |
+ *   |AltShf|Grv/L1|  '"  |Command| Eisu |                                       | Kana |   =  |   [  |   ]  | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | LGui | App  |       | Ctrl/Esc | RGui |
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,           KC_W,   KC_E,   KC_R,   KC_T,   KC_LPRN,
         KC_ESC,         KC_A,           KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        CTL_T(KC_Z),    KC_X,   KC_C,   KC_V,   KC_B,   KC_LCBR,
-        LALT(KC_LSFT),  LT(SYMB,KC_GRV),KC_QUOT,LSFT(KC_SLASH),GUI_T(KC_LANG2),
+        LALT(KC_LSFT),  LT(SYMB,KC_GRV),KC_QUOT,KC_LGUI,GUI_T(KC_LANG2),
                                               KC_LGUI,  ALT_T(KC_APP),
                                                               KC_HOME,
                                                KC_BSPC,KC_DELT,KC_END,
